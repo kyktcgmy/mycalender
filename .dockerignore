@@ -1,0 +1,24 @@
+# 依存パッケージ（ビルド時に npm ci で再インストールする）
+node_modules
+
+# ビルド成果物（ビルドステージで生成する）
+.next
+
+# 環境変数ファイル（シークレットは Cloud Run の Secret Manager で管理する）
+.env
+.env.local
+.env.*.local
+
+# 開発・テスト関連
+__tests__
+jest.config.ts
+coverage
+
+# Git 関連
+.git
+.gitignore
+
+# その他
+.DS_Store
+*.log
+README.md
